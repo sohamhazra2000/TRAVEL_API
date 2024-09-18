@@ -6,9 +6,7 @@ const cors = require('cors')
 const routes_app=require("./routes/product")
 const connectdb=require("./db/connect")
 const product=require('./models/product')
-// app.get("/",(req,res)=>{
-//     res.send("server on home page")
-// })
+
 app.use(express.json())
 app.use(cors())
 app.use("/", routes_app)
